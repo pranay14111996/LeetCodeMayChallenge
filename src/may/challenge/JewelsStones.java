@@ -16,7 +16,7 @@ public class JewelsStones {
         int count = 0 ;
         for( int i = 0;i <S.length() ;i++ ) {
         	if(jewels[S.charAt(i) - 'A'] == 1) {
-        		count++; 
+        		count++;
         	}
         }
        return count;
