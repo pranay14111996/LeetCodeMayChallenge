@@ -7,7 +7,7 @@ public class RansomNote {
 	}
 
 	public boolean canConstruct(String ransomNote, String magazine) {
-		int mag[] = new int[256];
+		int mag[] = new int[26];
 		for (int i = 0; i < magazine.length(); i++) {
 			mag[magazine.charAt(i) - 'A']++;
 		}
