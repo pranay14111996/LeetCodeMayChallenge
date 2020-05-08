@@ -1,4 +1,4 @@
-package may.challenge;
+package may.challenge.week1;
 
 public class NumComplement {
 	public static void main(String[] args) {

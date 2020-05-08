@@ -1,4 +1,4 @@
-package may.challenge;
+package may.challenge.week1;
 
 import may.challenge.utils.TreeNode;
 

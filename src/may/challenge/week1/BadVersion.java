@@ -1,4 +1,4 @@
-package may.challenge;
+package may.challenge.week1;
 public class BadVersion {
 	
 	private static final int n = 5;
