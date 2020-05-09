@@ -7,6 +7,15 @@ public class ValidPerfectSquare {
 		validPerfectSquare.findLargePerfectInt(); //46340
 	}
 
+    public boolean isPerfectSquare2(int num) {
+        for(long i = 0 ; i*i <=num ;i++ ){
+            if(i * i == num){
+                return true;
+            }
+        }
+        return false;
+    }
+    
 	public boolean isPerfectSquare(int num) {
 		long start = 1;
 		long end = num;
