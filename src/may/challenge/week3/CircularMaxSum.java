@@ -1,12 +1,22 @@
 package may.challenge.week3;
 
+/**
+ * @author cpranay
+ *
+ */
 public class CircularMaxSum {
 	public static void main(String[] args) {
 		CircularMaxSum circularMaxSum = new CircularMaxSum();
 		int[] A = {3,-2,2,-1,3};
 		System.out.println(circularMaxSum.maxSubarraySumCircular(A));
 	}
-
+	
+	/**
+	 * See this link
+	 * @see <a href = "https://www.youtube.com/watch?v=kssIQAIg9c8">Max sum in circular array</a>
+	 * @param A
+	 * @return
+	 */
 	public int maxSubarraySumCircular(int[] A) {
 		if (A.length == 0) {
 			return 0;
