@@ -32,6 +32,6 @@ public class IntervalListIntersection {
 				b++;
 			}
 		}
-		return intersection.toArray(new int[intersection.size()][2]);
+		return intersection.toArray(new int[intersection.size()][]);
 	}
 }
