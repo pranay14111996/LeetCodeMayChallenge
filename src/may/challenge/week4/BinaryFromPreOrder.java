@@ -39,4 +39,23 @@ public class BinaryFromPreOrder {
 		root.right = bstHelper(rightIdx, endIdx);
 		return root;
 	}
+	
+	
+	// Better implementation
+	// First we store 0 idx as root 
+	// and we store left as null if root.val is less than the idx+1th element or we store left as element itself if root.val is greater
+	// and we store right as null if root.val is greater than the idx+1th element or we store right as element itself if root.val is lesser
+	int preIndex = 0;
+    public TreeNode bstFromPreorder2(int[] preorder) {
+        return constructBST(preorder,Integer.MAX_VALUE); 
+    }
+
+    TreeNode constructBST(int[] preOrder,int val){
+        if (preIndex==preOrder.length || val<preOrder[preIndex])
+            return null;
+        TreeNode root=new TreeNode(preOrder[preIndex++]);
+        root.left=constructBST(preOrder,root.val);
+        root.right=constructBST(preOrder,val);
+        return root;
+    }
 }
